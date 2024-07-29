@@ -1,0 +1,23 @@
+<!--
+!
+!   System              : Genesis Business Library
+!   Sub-System          : multi-pro-code-test Configuration
+!   Version             : 1.0
+!   Copyright           : (c) Genesis
+!   Date                : 2022-03-18
+!   Function : Provide Service Definitions Config for multi-pro-code-test.
+!
+!   Modification History
+!
+-->
+<configuration>
+    <service host="localhost" name="SMART_FORMS_EXAMPLES_DATASERVER" port="11000"/>
+<!--    <service host="localhost" name="SMART_FORMS_EXAMPLES_REQUEST_SERVER" port="11001"/>-->
+    <service host="localhost" name="SMART_FORMS_EXAMPLES_EVENT_HANDLER" port="11002"/>
+<!--    <service host="localhost" name="SMART_FORMS_EXAMPLES_CONSOLIDATOR" port="11003"/>-->
+<!--    <service host="localhost" name="SMART_FORMS_EXAMPLES_FGW" port ="11004"/>-->
+<!--    <service host="localhost" name="SMART_FORMS_EXAMPLES_FGW_STREAMER" port ="11005"/>-->
+<!--    <service host="localhost" name="SMART_FORMS_EXAMPLES_FGW_STREAMER_CLIENT" port ="11006"/>-->
+<!--    <service host="localhost" name="GENESIS_EVALUATOR" port="11007"/>-->
+<!--    <service host="localhost" name="SMART_FORMS_EXAMPLES_DATAPIPELINE" port="11008"/>-->
+</configuration>
