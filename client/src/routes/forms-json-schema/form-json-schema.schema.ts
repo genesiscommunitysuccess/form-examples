@@ -70,7 +70,8 @@ export const tradeUISchema: UiSchema = {
     },
     {
       type: 'Control',
-      scope: '#/properties/PRICE'
+      scope: '#/properties/PRICE',
+      placeholder: 'Enter bid/offer price',
     },
     {
       type: 'Control',

@@ -1,5 +1,6 @@
 import { JSONSchema7 } from 'json-schema';
 import { ConnectedRenderersOptions, UiSchema, UiSchemaElement } from '@genesislcap/foundation-forms';
+import { StringRendererOptions } from '@genesislcap/foundation-forms/dist/dts/types';
 
 
 // text Input
@@ -48,6 +49,34 @@ const dateInputUiSchema: UiSchemaElement = {
   type: 'Control',
   scope: '#/properties/dateInput'
 };
+
+// Password Input
+const passwordInputJsonSchema: JSONSchema7 = {
+  type: 'string',
+  description: 'kotlin.String'
+};
+
+const passwordInputUiSchema: UiSchemaElement = {
+  type: 'Control',
+  scope: '#/properties/password',
+  options: <StringRendererOptions>{
+    isPassword: true,
+  }
+}
+
+// Textarea Input
+const textAreaInputJsonSchema: JSONSchema7 = {
+  type: 'string',
+  description: 'kotlin.String'
+}
+
+const textAreaInputUiSchema: UiSchemaElement = {
+  type: 'Control',
+  scope: '#/properties/textarea',
+  options: <StringRendererOptions>{
+    textarea: true,
+  }
+}
 
 
 // Select Input
@@ -114,6 +143,8 @@ export const formControlsJSONSchema: JSONSchema7 = {
     numberInput: numberJsonSchema,
     booleanInput: booleanInputJsonSchema,
     dateInput: dateInputJsonSchema,
+    passwordInput: passwordInputJsonSchema,
+    textareaInput: textAreaInputJsonSchema,
     selectInput: selectInputJsonSchema,
     connectedSelectInput: connectedSelectJsonSchema,
     connectedMultiSelectInput: connectedMultiSelectJsonSchema,
@@ -121,12 +152,14 @@ export const formControlsJSONSchema: JSONSchema7 = {
 };
 
 export const formControlsUISchema: UiSchema = {
-  type: 'VerticalLayout',
+  type: 'LayoutVertical2Columns',
   elements: [
     textInputUiSchema,
     numberInputUiSchema,
     booleanInputUiSchema,
     dateInputUiSchema,
+    passwordInputUiSchema,
+    textAreaInputUiSchema,
     selectInputUiSchema,
     connectedSelectUISchema,
     connectedMultiSelectUISchema,

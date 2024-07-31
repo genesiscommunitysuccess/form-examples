@@ -16,10 +16,8 @@ import { css } from '@microsoft/fast-element';
 export class FormsIntroduction extends FoundationElement {
 
   @observable existingData = {
-    ISSUER_NAME: 'Genesis',
-    PRICE: 100,
-    MAIN_CONTACT: '555-555-5555',
-    PASSWORD: 'secret_password',
+    SIDE: 'BUY',
+    QUANTITY: 100,
   }
 
   handleFormSubmit(e: CustomEvent) {
