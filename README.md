@@ -8,7 +8,7 @@ This application is a reference example for the different uses of Genesis Founda
 
 There are examples using just the front end and both front end and backend together.
 
-It is intended to be a companion piece to the docs on [Genesis Learn - Web - Forms](http://localhost:8080/web/forms/foundation-forms/)
+It is intended to be a companion piece to the docs on [Genesis Learn - Web - Forms](https://learn.genesis.global/docs/web/forms/foundation-forms/)
 
 Note, some forms use the backend generated meta data feature and will not work if the backend is not configured correctly.
 
